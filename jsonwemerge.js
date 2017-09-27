@@ -65,7 +65,7 @@ var mergeDB = function(data, a, b, c){
       })
     console.log(count+" weak entities were merged.");
     if (count) resolve(data);
-    else reject(err);
+    else reject("No matches found.");
   })
 }
 
