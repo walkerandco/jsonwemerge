@@ -74,7 +74,7 @@ var writeFile = function(file, data){
   return new Promise((resolve, reject) => {
     //prompt user re writing the file
     rl.question('Save changes? \n\n', (ans) => {
-      if (ans !== 'y' || 'Y') reject("Operation refused.");
+      if (ans !== ('y' || 'Y')) reject("Operation refused.");
       else fs.writeFile(file, data, (err, result) => {
         if (err) reject (err);
         else resolve(console.log("Operation was successful."));
