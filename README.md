@@ -4,7 +4,7 @@ This is a node script which is designed to take a JSON data structure (primary d
 
 The tool takes any JSON path for comparison and writes a new primary database as a separate JSON file.
 
-**Requires: Node.js 1.4+**
+**Requires: Node.js 4.0+**
 
 
 # Usage
